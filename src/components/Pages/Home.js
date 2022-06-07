@@ -4,6 +4,7 @@ const Home = () => {
       <>
         <div className="container mt-10">
           <p>Index</p> 
+          <ItemListContainer />
         </div>
      </>
     );
