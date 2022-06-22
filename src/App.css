@@ -12,6 +12,14 @@ a {
   text-decoration: none !important;
 }
 
+.mt-2 {
+  margin-top: 2rem!important;
+}
+
+.mb-4 {
+  margin-bottom: 4rem!important;
+}
+
 .mt-5 {
   margin-top: 5rem!important;
 }
@@ -271,11 +279,21 @@ a {
   border: 1px solid black4d !important;
   border-radius: 0.25rem;
 }
-.card-text{
+.card-text {
   font-style: italic;
   font-size: 1.1rem;
   color: #3e3e3e;
 }
+
+.text-p {
+  color: black !important;
+
+}
+
+.text-h {
+  font-weight: bolder;
+}
+
 .card {
   margin-left: 10px;
   margin-right: 10px;
@@ -345,6 +363,23 @@ a {
   background-color: black;
 }
 
+.single_product_t {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.single_product_total {
+  font-weight: bolder;
+  color: #40dd19;
+}
+
+.single_product_text {
+  font-style: italic;
+  font-size: 1.1rem;
+  color: #3e3e3e;
+  margin-top: 0;
+  margin-bottom: 0;
+}
 
 .single_product_thumb {
   margin-bottom: 100px;
@@ -496,8 +531,8 @@ a {
   display: inline-block;
   position: relative;
   z-index: 1;
-  margin-right: 21px;
-  margin-left: 15px;
+  margin-left: auto !important;
+  margin-right: auto !important;
 }
 
 .widget.size .widget-desc li {
@@ -589,10 +624,35 @@ a {
   border-bottom: 1px solid #ebebeb;
 }
 
+.card-text-principal {
+  font-style: italic;
+  font-size: 1.1rem;
+  color: #3e3e3e;
+  padding-bottom: 10px;
+  margin-top: 10px !important;
+  margin-bottom: 10px !important;
+  border-bottom: 1px solid #ebebeb;
+}
+
+.card-text-precio {
+  font-style: italic;
+  font-weight: bolder;
+  font-size: 1.1rem;
+  color: #3e3e3e;
+  padding-bottom: 10px;
+  margin-top: 10px !important;
+  margin-bottom: 10px !important;
+}
+
 .card-text-detail-otro {
   font-weight: 700;
   font-size: 1.1rem;
   color: #40dd19;
   padding-bottom: 0px;
   margin-bottom: 5px;
+}
+
+.card-decoration {
+  padding-top: 1rem;
+  border-top: 1px solid #ebebeb;
 }

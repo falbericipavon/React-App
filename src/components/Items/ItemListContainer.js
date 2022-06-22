@@ -3,10 +3,10 @@ import  ItemList  from './ItemList';
 import { productosData } from './productosData';
 import CardGroup from 'react-bootstrap/CardGroup';
 import { useParams } from 'react-router-dom';
-
+import Categorias from "../Categorias";
 
 const ItemListContainer = () =>{
-   const [productos, setProductos] = useState([]);
+  const [productos, setProductos] = useState([]);
 
   const { catId } = useParams();
 
@@ -18,17 +18,23 @@ const ItemListContainer = () =>{
     });
 
     getProductos.then((res) => {
-      setProductos(res);
+      catId ? 
+      setProductos(res.filter(producto => producto.categoria === catId))
+      : setProductos(res);
     });
   }, [catId] )
+
   return (
-   <>
-     <h1>Lista de items</h1>
-     <CardGroup className="pt-5 pb-5">
-         <ItemList productos={productos} />
-     </CardGroup>
-   </>
-  );
+    <>
+      <div className="container mt-10 text-center">
+        <h1 className="">Nuestros Productos</h1>
+            <Categorias />
+            <CardGroup className="pt-5 pb-5">
+                <ItemList productos={productos} />
+            </CardGroup>
+      </div>
+    </>
+  )
 }
 
-export default ItemListContainer
+export default ItemListContainer;

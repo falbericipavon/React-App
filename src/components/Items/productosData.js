@@ -1,10 +1,12 @@
+
 export const productosData = [
     {
         id: '1',
         title: 'NIKE PEGASUS AIR',
         price: '1250',
         stock: '5',
-        categoria: 'zapatillas',
+        categoria: 'Zapatillas',
+        detalle: 'El calzado NIKE reposto está diseñado para que tu atuendo brille en cualquier ocasión.',
         picture: '/productos/zapatilla_1.jpg'
     },
     {
@@ -12,7 +14,8 @@ export const productosData = [
         title: 'NIKE REACT ACTIVE',
         price: '1500',
         stock: '10',
-        categoria: 'zapatillas',
+        categoria: 'Zapatillas',
+        detalle: 'Diseñada para los corredores con un talón endurecido para mayor durabilidad y la textura en general de material elástico con ajuste exacto.',
         picture: '/productos/zapatilla_2.jpg'
     },
     {
@@ -20,7 +23,8 @@ export const productosData = [
         title: 'NIKE RUNNING',
         price: '1800',
         stock: '15',
-        categoria: 'zapatillas',
+        categoria: 'Zapatillas',
+        detalle: 'Las Zapatillas NIKE Running ofrecen un buen rendimiento, comodidad y versatilidad para afrontar los rodajes diarios.',
         picture: '/productos/zapatilla_3.jpg'
     },
     {
@@ -28,7 +32,8 @@ export const productosData = [
         title: 'NIKE JOYRIDE',
         price: '1000',
         stock: '8',
-        categoria: 'zapatillas',
+        categoria: 'Zapatillas',
+        detalle: 'Gracias a su gran agarre, podés hacer levantamientos, entrenamientos de alta intensidad, conquistar una clase o fortalecerte en las máquinas.',
         picture: '/productos/zapatilla_4.jpg'
     },
     {
@@ -36,7 +41,8 @@ export const productosData = [
         title: 'LENTES COCO',
         price: '1250',
         stock: '25',
-        categoria: 'lentes',
+        categoria: 'Lentes',
+        detalle: 'Anteojo de sol de grilamid, Flexible, Anatómico, con lentes polarizados.',
         picture: '/productos/lentes_1.jpg'
     },
     {
@@ -44,7 +50,8 @@ export const productosData = [
         title: 'LENTES ACTIVE',
         price: '1700',
         stock: '10',
-        categoria: 'lentes',
+        categoria: 'Lentes',
+        detalle: 'Lentes de Sol Polarizada, con 100% protección UV. Cristales antireflejantes.',
         picture: '/productos/lentes_2.jpg'
     },
     {
@@ -52,7 +59,8 @@ export const productosData = [
         title: 'LENTES MOE',
         price: '1200',
         stock: '20',
-        categoria: 'lentes',
+        categoria: 'Lentes',
+        detalle: 'Gafas de sol redondas clásicas para mujer y hombre, retro, vintage, marco de plástico grande.',
         picture: '/productos/lentes_3.jpg'
     },
     {
@@ -60,7 +68,8 @@ export const productosData = [
         title: 'LENTES JOYRIDE',
         price: '1500',
         stock: '18',
-        categoria: 'lentes',
+        categoria: 'Lentes',
+        detalle: 'Lentes modelo Cliper, con vidrios polarizados y antireflectantes.',
         picture: '/productos/lentes_4.jpg'
     },
     {
@@ -68,7 +77,8 @@ export const productosData = [
         title: 'REMERA NEGRA',
         price: '2550',
         stock: '22',
-        categoria: 'remeras',
+        categoria: 'Remeras',
+        detalle: 'Camisa negra, manga larga con botones en forma de corazon.',
         picture: '/productos/camisa_1.jpg'
     },
     {
@@ -76,7 +86,8 @@ export const productosData = [
         title: 'REMERA BART',
         price: '1800',
         stock: '19',
-        categoria: 'remeras',
+        categoria: 'Remeras',
+        detalle: 'Remera cuello redondo, manga corta, con estampa, 100% algodon.',
         picture: '/productos/camisa_2.jpg'
     },
     {
@@ -84,7 +95,8 @@ export const productosData = [
         title: 'REMERA SKELETON',
         price: '3000',
         stock: '15',
-        categoria: 'remeras',
+        categoria: 'Remeras',
+        detalle: 'Remera cuello redondo para mujer, manga corta, con estampa, 100% algodon.',
         picture: '/productos/camisa_3.jpg'
     },
     {
@@ -92,7 +104,8 @@ export const productosData = [
         title: 'REMERA SKY',
         price: '3200',
         stock: '3',
-        categoria: 'remeras',
+        categoria: 'Remeras',
+        detalle: 'Buzo frizado holgado, con estampa, capucha y manga larga. ',
         picture: '/productos/buzo_1.jpg'
     }
 
