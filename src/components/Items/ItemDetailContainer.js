@@ -1,14 +1,14 @@
-import React, { useEffect, useState } from 'react';
+import React, {  useEffect, useState } from 'react';
 import ItemDetail from './ItemDetail';
 import { productosData } from './productosData';
 import { useParams } from 'react-router-dom';
 
-
 const ItemDetailContainer = () => {
   const [productos, setProductos] = useState([]);
   const [irAlCarrito, setIrAlCarrito] = useState(false);
+
   const { prodId } = useParams();
-    
+
   useEffect(() => {
 
     const getProductos = new Promise((resolve) => {

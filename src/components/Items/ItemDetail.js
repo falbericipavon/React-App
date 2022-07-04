@@ -1,10 +1,13 @@
 import Image from 'react-bootstrap/Image';
 import ItemCount from './ItemCount';
-import {useState} from "react";
+import {useState, useContext} from "react";
 import { Link } from 'react-router-dom';
+import { contexto } from './CartContext';
 
 const ItemDetail = ({producto}) => {
 
+    const resultado = useContext(contexto);
+    const addItem = resultado.addItem;
     const [cantArticulos, setItemContador] = useState(false);
     const onAdd = (unidadesContador) => {
         if(unidadesContador !== undefined){
@@ -35,19 +38,24 @@ const ItemDetail = ({producto}) => {
                             <h5 className="title">{producto.title}</h5>
                             <p className="card-text-principal">Categoria: {producto.categoria}</p>
                             <p className="card-text-principal">Detalle: {producto.detalle}</p>
-                            <p className="card-text card-text-precio">Precio: $ {producto.price}</p>
                             {cantArticulos ? (
                                     <>
-                                        <div className="cart clearfix mb-50 d-block text-center card-decoration">
+                                        <div className="cart clearfix mb-50 d-block text-center">
                                             <h5 className="card-text-detail-otro">{"Agregaste al carrito " + cantArticulos}</h5>
                                             <h5 className="card-text-detail-otro">{"Total: $  " + cantArticulos*producto.price}</h5>
                                         </div>
-                                        <div className="cart clearfix mt-4 mb-50 d-flex">
-                                            <Link className="btn btn-compra cart-submit d-block" to="/carrito"> Terminar compra</Link>
+                                        <div className="cart clearfix d-flex">
+                                            <div className="col-6 mt-4 mb-50">
+                                                <Link className="btn cart-opciones d-block" to="/" onClick={()=>addItem(producto, cantArticulos)}> Seguir comprando </Link>
+                                            </div>
+                                            <div className="col-6 mt-4 mb-50">
+                                                <Link className="btn cart-opciones d-block" to="/carrito" onClick={()=>addItem(producto, cantArticulos)}> Ver carrito </Link>
+                                            </div>
                                         </div>
                                     </>
                                     ) : (
                                     <>
+                                        <p className="card-text card-text-precio">Precio: $ {producto.price}</p>
                                         <div className="cart clearfix mt-4 mb-50 d-flex">
                                             <ItemCount initial={1} stock={producto.stock} onAdd={onAdd}/>
                                         </div>
